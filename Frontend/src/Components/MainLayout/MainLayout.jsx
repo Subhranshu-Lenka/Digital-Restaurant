@@ -8,7 +8,7 @@ function MainLayout() {
         <>
             <div className='min-h-dvh flex flex-col place-content-between'>
                 <Header />
-                <main className='flex-1'>
+                <main className='flex-1 flex'>
                     <Outlet />
                 </main>
                 <Footer />
