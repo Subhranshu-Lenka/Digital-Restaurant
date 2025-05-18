@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-
+import Router from './Components/Router/Router'
 function App() {
 
 
   return (
     <>
-      <h1>Hello World!</h1>
+      <Router />
     </>
   )
 }
