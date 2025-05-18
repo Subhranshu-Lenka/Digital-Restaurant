@@ -6,11 +6,13 @@ import { Outlet } from 'react-router-dom'
 function MainLayout() {
     return (
         <>
-            <Header />
-            <main>
-                <Outlet />
-            </main>
-            <Footer />
+            <div className='min-h-dvh flex flex-col place-content-between'>
+                <Header />
+                <main className='flex-1'>
+                    <Outlet />
+                </main>
+                <Footer />
+            </div>
         </>
     )
 }
