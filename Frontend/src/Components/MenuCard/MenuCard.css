@@ -1,0 +1,20 @@
+.container {
+    font-family: ;
+    width: 20rem;
+    height: auto;
+    background-color: white;
+    aspect-ratio: 3/4;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: black;
+}
+
+.card-img{
+    width: 100%; 
+    object-fit: cover;
+}
+
+.card-heading{
+    font-size: large;
+    font-weight: 700;
+}
