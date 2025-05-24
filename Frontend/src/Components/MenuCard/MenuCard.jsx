@@ -1,7 +1,6 @@
 //  { id: 1, name: "Margherita Pizza", price: 10, desc: "Classic cheese pizza", img: "🍕" },
-import './MenuCard.css'
-function MenuCard({key, name, desc, price, image}) {
-
+import "./MenuCard.css";
+function MenuCard({ keys, name, desc, price, image }) {
   /*
   border-2 
   bg-white 
@@ -13,23 +12,20 @@ function MenuCard({key, name, desc, price, image}) {
 
   return (
     <>
-        <div className="container">
-          <img 
-          className="card-img"
-          src={image} alt="Dish Image" 
-          />
-
-          <h3
-          className="card-heading"
-          >{name}</h3>
-          <p>{desc}</p>
-          <p>{price}</p>
-
-          <button>Add to Cart</button>
-          <button>Save</button>
+      <div className="container">
+        <div className="img-container">
+          <img className="card-img" src={image} alt="Dish Image" />
         </div>
+
+        <h3 className="card-heading">{name}</h3>
+        <p>{desc}</p>
+        <p>{price}</p>
+
+        <button>Add to Cart</button>
+        <button>Save</button>
+      </div>
     </>
-  )
+  );
 }
 
-export default MenuCard
+export default MenuCard;
