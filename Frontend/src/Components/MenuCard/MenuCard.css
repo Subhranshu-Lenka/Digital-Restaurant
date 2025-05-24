@@ -23,3 +23,16 @@
   font-size: large;
   font-weight: 700;
 }
+
+.card-btn {
+  border: 4px solid #ff6500;
+  padding: 1.5% 5%;
+  border-radius: 15px;
+  margin: 2px;
+  font-weight: 700;
+}
+
+.card-btn:hover {
+  color: white;
+  background-color: #ff6500;
+}

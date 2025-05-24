@@ -8,7 +8,7 @@ import MenuCard from "../../Components/MenuCard/MenuCard";
 function Menu() {
   return (
     <>
-      <div>
+      <div className="border-2 w-full">
         <div>This is the menu-card page.</div>
         <p>
           In here we tell our customers about the great food-experience our{" "}
@@ -16,16 +16,22 @@ function Menu() {
         </p>
 
         <br />
-        <main className="flex flex-wrap justify-between gap-10">
+        {/* <main className="flex flex-wrap justify-between gap-10"> */}
+        <main className="border-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ">
           {dishes &&
             dishes.map((dish) => (
-              <MenuCard
+              <div
                 key={dish.id}
-                name={dish.name}
-                price={dish.price}
-                desc={dish.desc}
-                image={dish.img}
-              />
+                className="flex items-center justify-center p-4"
+              >
+                <MenuCard
+                  key={dish.id}
+                  name={dish.name}
+                  price={dish.price}
+                  desc={dish.desc}
+                  image={dish.img}
+                />
+              </div>
             ))}
         </main>
       </div>
