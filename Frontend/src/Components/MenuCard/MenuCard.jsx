@@ -21,7 +21,7 @@ function MenuCard({ keys, name, desc, price, image }) {
         <p>{desc}</p>
         <p>{price}</p>
 
-        <button>Add to Cart</button>
+        <button>Add to Cart</button>  
         <button>Save</button>
       </div>
     </>

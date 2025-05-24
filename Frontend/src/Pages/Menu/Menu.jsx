@@ -16,7 +16,7 @@ function Menu() {
         </p>
 
         <br />
-        <main className="flex gap-10">
+        <main className="flex flex-wrap justify-between gap-10">
           {dishes &&
             dishes.map((dish) => (
               <MenuCard
