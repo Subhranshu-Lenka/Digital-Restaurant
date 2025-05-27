@@ -11,7 +11,7 @@ function MenuCard({ keys, name, desc, price, image }) {
 
         <h3 className="card-heading">{name}</h3>
         <p>{desc}</p>
-        <p>{price}</p>
+        <p>₹ {price}</p>
 
         <button className="card-btn">Add to Cart</button>  
         <button className="card-btn">Save</button>

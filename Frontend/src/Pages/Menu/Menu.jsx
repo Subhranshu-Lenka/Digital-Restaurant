@@ -3,6 +3,7 @@
 import { dishes } from "../../Data/data";
 
 import MenuCard from "../../Components/MenuCard/MenuCard";
+import Cart from "../../Components/Cart/Cart";
 
 //  { id: 1, name: "Margherita Pizza", price: 10, desc: "Classic cheese pizza", img: "🍕" },
 function Menu() {
@@ -33,6 +34,9 @@ function Menu() {
                 />
               </div>
             ))}
+
+            <Cart/>
+
         </main>
       </div>
     </>
