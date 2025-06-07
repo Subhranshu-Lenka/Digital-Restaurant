@@ -8,4 +8,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    host: true, // OR use '0.0.0.0'
+    allowedHosts: ['192.168.1.43.nip.io'],
+    port: 5173,
+  }
 })
