@@ -13,4 +13,4 @@ connectDB()
         console.log("Express App is listening on Port ",Port);
     });
 })
-.catch((err)=> console.log("Connection Error: ",err));
+.catch((err)=> console.log("Connection Error: ",err));  
