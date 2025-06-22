@@ -11,7 +11,7 @@ const connectDB = async () => {
         }
     } catch (error) {
         console.log("DB Connection Error ", error);
-        return
+        throw error;
     }
 }
 
