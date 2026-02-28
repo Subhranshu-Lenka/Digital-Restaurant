@@ -1,5 +1,4 @@
 import dotenv from "dotenv";
-import mongoose from "mongoose";
 dotenv.config();
 
 import connectDB from "./db/connectDB.js";
@@ -11,15 +10,16 @@ app.get("/", (req, res) => {
   return res.send("Hello User!");
 });
 
-const customDB = mongoose.connection.useDb("restaurant1");
-const userSchema = new mongoose.Schema({}, { strict: false });
-const User = customDB.model("User", userSchema, "users");
-app.get("/users", async (req, res) => {
-  const users = await User.find({});
-  return res.send(users);
-});
+// const customDB = mongoose.connection.useDb("restaurant1");
+// console.log(customDB);
+// const userSchema = new mongoose.Schema({}, { strict: false });
+// const User = customDB.model("User", userSchema, "users");
+// app.get("/users", async (req, res) => {
+//   const users = await User.find({});
+//   return res.send(users);
+// });
 
-const Port = process.env.PORT || 8080;
+const Port = process.env.PORT ;
 connectDB()
   .then(() => {
     app.listen(Port, () => {
